@@ -1,0 +1,68 @@
+{
+  "ddkey": "E6EAF460AA2A8322D66B42C85B62F9",
+  "reqs": [
+    {
+      "t": "REQ",
+      "m": "GET",
+      "u": "https://js.datadome.co/tags.js",
+      "body": ""
+    },
+    {
+      "t": "RES",
+      "s": 200,
+      "u": "https://js.datadome.co/tags.js",
+      "setCookie": null,
+      "body": "/** DataDome is a cyberfraud solution to detect bot activity https://datadome.co (version 5.11.2) */\nvar DataDomeJsTag=(()=>{function A(n){return n&&n.__esModule&&Object.prototype.hasOwnProperty.call(n,\"default\")?n[\"default\"]:n}var n,t,c,i,o,z={},e={};function s(){var y,p,M;return n||(n=1,y=\"dd-\",p=100,M=0,e.beginMeasure=function(n){\"undefined\"!=typeof performance&&\"function\"==typeof performance.m"
+    },
+    {
+      "t": "REQ",
+      "m": "POST",
+      "u": "https://api-js.datadome.co/js/",
+      "body": "jspl=CZkhmM82QRaDW8Dz_Te3p6G3DEsT93Ih_7OSwE5uBRBWo3PS9rA2VVrfPYvd8y71r3dM5ruuE4K842Vt-wTyDvF3S6eRoPwVtSTNUK1HpYgJWGoCPYPofUwzENWT-fl-rqayHp5Qi74NnIhds7DOIfhxRpYwyU_eu1iXwb3SuWFpiiUoYeR1Oggo-2vYK9vwNVL2yIwGBiP2Y_ZFGJPXcqGPogLkwHaGhPVHW0JfQQNotD52ECKqnGSULWbtOCsoHJkQn-eK7AG2i2wn_RbDuj9Cs4tFOveFIQP921w6zR9TM-9PTqlRTQ6AdgB2fM9lJYg8jXOLGWXX0SmGCFIx6doI88wpN3fF68cA8M2Oz84OuOIqCedB2YGyXKkNNe6BcCvQIWs2uuYb7EqEGAaIQlZA7w83qmlERZ-ut55SOB_qF5XUUxxCFBexlFFCUwaD8MN64t29UemFML47_k7GFHtApJUT_eyyNNvXecpa3nWPMGQ8ORXB5PpZnwrCxSkRQbCnUfrPig44yo5O-pSmCV0mW9MnmgT5ilEKqxK4Hd8KiRhQrOsXIU6v79jOzn40AqGl6cm6Yn3CpZx-fu8uQ0VLdoh02-zYg2b25rcFvHQsB_t3sr6w23mGbFFzNY0M4XgeztHDUYffN_z6E1YtCuXW1zJHSjQ5MF1dmoT6wlBWPFihO6VydpNaGWaACVqp18J-ijEMJrKvoceSsW3RWTWw-UkgEB4ikyJWsrJ2MDFyD0-0U0sscBXMVvhUhrzr0at9HQwiv4jznViUG1JEbI8iaGpD-2Vnt6jmLKwAR-ohogJCBODtip_by9eXkn5xd-GcxOBm4IQa6K8uBfrguvr877Oj9vBeYF0uGKvXwsdlnwvHK8WJAPrOU1hmgqnVtFCNLiZ5LMfPx0VczqmYM95Q5ps9LH5RRuXE9pVj0UvWCJWHrhg0Gt7GAdz3zO56b7IVnwpT4MgoxAy76klYQOytyWg_va02wW6e4UvctpyJLR4qRJMzlL6Qmm5vKyp8OnSwpvjZxsEoZpTybgnSiSmEyIuA758Sc43wRUKFW7XVK9HzuNljGYoiDRps9zt-PFVaRDHfAmCGFvCbg3NNChDCXaqorvHR-k-GKQ-I-LglWpLAGSkPU_oGdiRDV9OTSxy9cfggRzGS19KD5OYgqhj7x7vqkPawr2--ccm4Y66oxBHkqfuqo8admdieFe4IqgJTsTNKn8GZSUHnXZ9Ogc58JPORsVxcZzPXeCX0UzaZU4jfCjJEcmX25lUKSqaUL8PShXAaY6bGF84XI-JIKh4XJ9cnNjtPla13w61-3BmHTUVvtTeGZRInMTNMB19KTpQtpUsRISi5V0zo__L6WAwZ2ROebXZmTlgHRLA3cq3GDMQwU9cIf8BxQihDto88OKK9XpltzruS40wATJD1ldfzMtU-W06NhVm5smx6ga9E2PI8ivGwwMhX9c9LSfWAJJsGsnkzyLlmCp2pup5w2xRTxbiNeGduNU0CnAGQHSFiAnZnuZOR53krgRzRM2C6zbXWFI_-1rYGHKnatTGB2PDX3OYLDRCzsk1itzHHnRQCEbatICIqzNPx61BI4XDSIhMft6tnwPn-V-Ag2n0bC6AcxGZyI4c7HCQUIh1-Un4fewUhuU2Uz7_P_A5Lm5-bYZiUi518Vd-s6Hi9d_4Y66qv0v-9f8XOjBN8APhDz3ToiarqVSMNHkPDUImi01XMK_LKLJzYY1B9XPEorJeMp414K__0m1_NKrp3Ioq8oh7DY6mpA1vEIiUFgt4p6f4N4AMSvXOszEyz69k_Oao0Or7M0mVqbvpOJcrRlBIFiW-F1eRvN-WpDDZlHRBWu72D2MeawCbt9_v2PlMYLMAEVj8pYLXu7vS-6PuGHiSIo8Kd4ias31lgcLWUDP8Ys8Zgok23RYfwdVyOnfodmQWLHeaD-Y8Ic0Az6pqNeDUdt5qyHCK66v_mQcaP5iiE7UEN3X60hKZBVoXGecOgas7nSSCVIizOmEctEHz4Pt187G_xvSdAlEVN8CgdaMtkXr0QFF7LrYs2hgAOrOD4se2r4sljrIgUF2lyonFRuaAksfJaQ09mjXg3tj-fJPEPMfBJ0We5f8lnVWRRluBfuybXh6Q_uK1RnJozTM7MadckXMrJA1osnl7K4wBdeCQhRRkp89Hoqd5q-iTm2P6yDjhk9FezadyJnQy7M-GoXxJflqEt12nKsk2tzyRgr-bOkWYqSTAnEoTW4ryj4doyd0-T7pBtFm-przkvXlVOG4Wfz_FztB1dvA2bdNG0ilJKHTcxeJTMATHaf1PPjp9Wk3Z1M9nDGPQ3eJ6if3wOuPOYA7BoCkWWzFB30WN-rDhpoXQgnz35wxG_RkOy6fLsEt83DwY4bqkHDoKb-E-5AnxgE5hf5-tDdqHi9a-UELR9CaX8PM4A0Sr5z8NxAE61shqAYrCBRGhfE3zUAtv8rIaViftFBNRP-xO_Yg-wuDtrhElj-jWO1Wppwc9-o0VWtaWsIOdLa9-trKw0obxfBdNLl9dsQI7r-wpNvl595CJeHMjRp7z_Mwj4WwqbuLqJSjwnfQhvS4dHleNsZi3Y3uAzGA88ovcVlXoMQDYSPgysw7u3WThDY1Z773VXRrA_U1kDFQC2lrdUuyGbMnbriLHM3T4jMxA0a-i2mmT8E-fL00H5JHQIizwUWbVJjkMjxZIsYWonP8HC5innmG_89m_P4KSGdfjZn-qIiK_r4nNYyM5sK0-a5AZnaRmZXHptEivmr-vKAoBKiqtxf9nUTW1VlgxWVOcfdz7yjrNKsHy8IWiTlyYIg-CdHo2FsJtRcCcWbuXnPaCIkcWReU9ANsUZhG9Duzqp5CPEHW7eN9numJzWHbqXjMytiUM4U87JEJXr0AmTUPScQfAO6l0HZVkTfZOIfbU2vk_CGP41Jcf6FeY8jmGGjw33SrXd0C40U18Lo_4BwODMdQyR5fS466tkQIW7wrdYA4T3kygKDj0XKafxVvNSkC9TKxJ61SyNpFaJywLonbJk750R2_Ux4OrtLjDEbCqM-yA3sCyLVKyNzpGZHjs7Ye8uycUE22brwrV0SWKkaWYmp8Idy5gP6LEPxesqgxLlmAKNFxlVbfbFx2zno4vqIBMqTH7UHvCF2iT_DMNH736Gx1qDArgNpMrq9_USWbDPNiQ3l5pVHCdDxkiigewYp2Vf3-t5MO_kBObHxGoS7CTXvKw5YO4LmMtAieIucoh5NCUz_iy2ZabyFZs3gv7HkjA3HYmbM1AkyH3hE-Khum3_3KMNZXXLIljohwHVvlzBga4RjaWr3QrV4U8tP9iSg5Bo8noeztgzPfdkN6lTBOcPtttqoY5snkSdIpWTI4sAwNDpuKyONpEKa-pmRT5MAxe6q3-QRLxH2Mgu-LFSDGZ8Ncqn1HwybwgWvdfmdCxKO0AdhB-rTJ77Y7YMlSNU6W060_6HDDBph8_Vdm2V-5ETUn3TO8YbUJxYyH3K3Uw_8rwenQrcExPNtCdsqrcfpsoqRIz3MTtQpTcB4UUrUQtxE8XGPe9ZLUJwldeIEtDuX3Xjw8nsenK9ILPKSuhLs2DVy0Nw6JZ-EsnX7akQmDkeoLeIjeFln0fiIiEsh8syepnvHFZKcTgiYEdCemP2e4SdPV0Zxpn4RfbWxOxUHkf9rpX3KjmyhNgIRa7OgiE-mMtddY46jXZfZ12MSjoX0U_B6cvdoBVSP3TFBIZwv_uisW3PEtE58WnCwCaKGVo_60vZn04ghvCompTTQdaMEv2QNHGksnuV2Ekm2jAXXEEMmXfXTpvUsDiOhSMAm0DQyQBistd-1KurlFAwGpkh1iWzF6EfxJ1PfnjvG4WMWkgOU1nkTMUGpkzSZxUxqZUliIx9ij-tUiZWWXRbZJvy3Ea7H9nGaE72i35AYt2gL_CTVfirnt42Av_lsxzC4v4hPS3gJcpo8Diah-6C1Culf6WQ_e6laVkh_5KRQiqJzOcCqeScWONUkXAiS1-4DhnOJGwAnjUU9RS96SeYY8p0s6mZ5p6VfVwHRvtfCzQwBtkVle_6HQRJ_phxkX_WBa_xP-Hjrn3fsyhPQtiRHFEn3pZHht5838HcZWNXkrsPyDSrW9hp0p-0uevr291WPtccCDrMoV5mqnbvkoA48SLv_SHpq_TfXcrh4KTiPjADjbEr48BVn4Cat99_hdsU9cN-j0ohhPs06xZJd61gZeuE8EhcUN8qi3Lw06pKN2KRmBGdR0voSDajnkajs5IQ7zrSmQLKJ6BBn00f6er_BSjkDj8m3CsjRMh5uGkegwSJNKWBLpB7HolfVgJVpPHqf8Xoay6kqetWY4ioR9q0EEwrvZyv9XQR7QfBFBU3iMS3TmDiB8R-lilgQpxx7atreljkzxP7zMYWmt3oZFV_hbJmWtgysEkQ_YE27mCAcXaBadJiU1Zs9fuXQvIMvRUEY2SjicYJWvQgDljrgGf77rvAbu3xL-1aSVuWUo8lRQK9n0YOEN57VVhm65Sc1lzjpddOY4AKObOjF7X-2fd78qmbj2HIKGILm0LKRI2l81cA4_Eou6kPh-NSmu0ZpaadDergPeAOKSSzqMZQzv3m_OftiPgZxDL_5KoqYjNhg2f61aCTlMPGRjkx2t6oH97kjHWmtbiXBMLP4UCsMnUI_fqPDLf1oGM0doHQH6tQzHTUYHKSc0sbYWZ7kG7JFZ-zBYFO1VHL2E1fPC8vjLWZKRBejDmlm8-7ORdlBinxBKb8_4VEgdjiAY57DZIDCxr_r-ArelgO_XO14s-yOvl15u3dCTFWblX9lmEYApbTZsUiNUsOzT5glwGeo48TLqWPmWzxvGRmqbRC09BkBfTTDUoHq-djfMZiu-jakJeBEpq0Zg_hT-ltl9ozDDfcFAmP35KW_I5Cr5vC6WzQM59LE5edWNo60biGf9jgb8sWzO1yU_Lax5F5qy9g1B0AHEUmRrB6tz61EGi1wzWHUDYwSIggb4_Kb0JQYSgMbbzXDXi5GJd_SRrSgLjs1TPSgNVWpUCywdI6WACWMWOcrRBoxRiXgaxhbbWhhsQhCr5H8njDzCUOmT-AdbE3f7Jz9ReU4-InvXrjE0_xIOmXCzJIbH1CswTqoIC-BpxkJwJaSUoXVdAL7fXZ6AY6xEUQHIi245Gou4F3F78v93CNMeQaFPqebnWyu9z12YKP9YPy&eventCounters=%5B%5D&jsType=ch&cid=.keep&ddk=E6EAF460AA2A8322D66B42C85B62F9&Referer=http%253A%252F%252F127.0.0.1%253A32791%252F&request=%252F&responsePage=origin&ddv=5.11.2"
+    },
+    {
+      "t": "RES",
+      "s": 200,
+      "u": "https://api-js.datadome.co/js/",
+      "setCookie": null,
+      "body": "{\"status\":200}"
+    }
+  ],
+  "state": {
+    "cookie": "",
+    "dataDomeOptions": [
+      "endpoint",
+      "version",
+      "ajaxListenerPath",
+      "ajaxListenerPathExclusion",
+      "customParam",
+      "exposeCaptchaFunction",
+      "abortAsyncOnChallengeDisplay",
+      "patternToRemoveFromReferrerUrl",
+      "eventsTrackingEnabled",
+      "overrideAbortFetch",
+      "ddResponsePage",
+      "isSalesforce",
+      "disableAutoRefreshOnCaptchaPassed",
+      "enableTagEvents",
+      "withCredentials",
+      "overrideCookieDomain",
+      "dryRun",
+      "sessionByHeader",
+      "ddCookieSessionName",
+      "enableServiceWorkerPlugin",
+      "deferSignals",
+      "replayAfterChallenge",
+      "enableCookieDomainFallback",
+      "readResponseHeadersByName",
+      "challengeLanguage",
+      "challengeRoot",
+      "profiling",
+      "check"
+    ],
+    "ddOptions": {
+      "ajaxListenerPath": true
+    },
+    "events": false
+  }
+}
