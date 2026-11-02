@@ -53,3 +53,17 @@ Detail: [`DATADOME_BREAK_2026_11_02.md`](DATADOME_BREAK_2026_11_02.md).
   contents.
 - Good-vs-bad framing: a **good** design — public key/endpoint like everyone, but
   the telemetry is opaque and the session + challenge are server-side.
+
+## Wire / tamper / mint (what can we actually do?)
+
+- **See the wire?** No. `jspl` is **3,903 bytes at 7.95 bits/byte entropy** — not
+  gzip/zlib/deflate/bzip2/brotli; a **custom-encoded/encrypted** blob. We could
+  not read it (`artifacts/wire-tamper-mint.json`).
+- **Tamper?** Yes at the envelope: we re-POSTed the telemetry with (a) unmodified,
+  (b) tampered `ddv`/`jsType`, (c) a **flipped-byte `jspl`**, (d) a fake `cid`.
+  **All four → `200` + a fresh `datadome` cookie.** The tags endpoint is a
+  **promiscuous trust endpoint** — it issues a session cookie regardless (the
+  cookie's *trust value* is decided server-side).
+- **Mint?** The `datadome` cookie is server-issued and trivially **obtainable** by
+  posting any telemetry — but it encodes the server's own assessment, so you
+  can't mint a *trusted* session.

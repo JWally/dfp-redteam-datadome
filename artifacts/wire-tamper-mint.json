@@ -1,0 +1,19 @@
+{
+  "jspl_bytes": 3903,
+  "entropy_bits_per_byte": 7.95,
+  "decoders_tried": [
+    "zlib",
+    "gzip",
+    "raw-deflate",
+    "bz2",
+    "brotli"
+  ],
+  "decoders_ok": [],
+  "tamper_replay": {
+    "replay_original": "200 + datadome cookie",
+    "tamper_fields_ddv_jsType": "200 + datadome cookie",
+    "tamper_jspl_flip_byte": "200 + datadome cookie",
+    "fake_cid_cookie": "200 + datadome cookie"
+  },
+  "note": "tags endpoint issues a fresh datadome cookie regardless of payload; jspl is opaque (entropy ~7.95/8)"
+}
