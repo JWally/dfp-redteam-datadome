@@ -38,7 +38,23 @@ Response: `{"status":200}`. On a real merchant context a server-issued
 **`datadome` cookie** is also returned (the device-session token). The
 documented order is `ch` first, then `le`.
 
-## 3. The `jspl` payload is opaque — and we did not break it
+## 3. The `jspl` payload is **reversible obfuscation, not crypto**
+
+A **prior harness** (`artifacts/PRIOR-RE-DataDome.md`, tags.js v5.6.6) reversed the
+cipher: the payload is **Marsaglia xorshift32 XOR** (`n^=n<<13; n^=n>>17; n^=n<<5`)
+seeded from `seed ^ 11027890091` mixed with a hash of the **public** `ddjskey`,
+mapped through a custom base64 alphabet (`-_0-9A-Za-z` in the current bundle).
+**No HMAC, no AEAD, no public key** → with the public key + approximate timestamp
+you can **decrypt and forge** it. The prior run decrypted real payloads and produced
+the full **203-signal** inventory (`artifacts/SIGNALS-SHIPPED.md`).
+
+Our live capture is v5.11.2: the bundle **still contains the `11027890091` constant**
+and the alphabet scheme, but the byte generator was refactored (`l(n,t)` slices
+`255&((i>>(16-8*o))^…)`), so the v5.6.6 decoder doesn't reproduce (v5.11.2 decode =
+41% printable). **Obfuscation, not protection** — the exact current keystream is
+re-derivable but was not completed here.
+
+### Original observation (v5.11.2, for the record)
 
 `jspl` base64-decodes to **high-entropy binary**. It is a **custom-encoded
 telemetry blob** (device + behaviour + proofs-of-work), decoded server-side. We
@@ -57,15 +73,16 @@ public, the contents are not.
 
 ## 5. Assessment
 
-- **Crypto-RE: ~4** — no exposed static client key; the telemetry uses a custom
-  opaque encoding we did not reverse. (Not a "broken crypto" story — there is no
-  obvious key to lift, unlike Fingerprint Pro's in-band XOR seal or Forter's
-  static AES key.)
-- **Resistance: ~65-70** — public loader/key/endpoint, but opaque telemetry and a
-  server-owned session + Device Check PoW. The client cannot mint trust; it can
-  only try to look human.
-- Good-vs-bad framing: a **good** design — the client is a sensor + shuttle; the
-  encoding and the decision are server-side.
+- **Crypto-RE: ~2** — **no cryptography**: reversible xorshift XOR + custom base64,
+  keyed by a public `ddjskey` + timestamp. (Prior v5.6.6 harness decrypted it; the
+  current v5.11.2 keystream is re-derivable.)
+- **Resistance: ~50 (revised)** — the wire is *obfuscated, not protected*; the real
+  moat is server-side (Device Check PoW + the requesting client's TLS/IP/header
+  signals). The client cannot mint a *trusted* session, but the payload is not
+  cryptographically sealed.
+- Good-vs-bad framing: **mixed** — strong server-side posture, but the client
+  payload is reversible obfuscation (weaker than Fingerprint Pro's/TMX's sealed
+  sides, stronger than the plaintext fraud-shims).
 
 ## Scope note
 
